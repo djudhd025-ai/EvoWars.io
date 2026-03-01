@@ -1,0 +1,14 @@
+{
+  "name": "evowarsio-mini",
+  "version": "1.0.0",
+  "description": "Mini EvoWars.io simulator game in TypeScript",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}
