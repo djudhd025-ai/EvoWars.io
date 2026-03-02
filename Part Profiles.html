@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thành tựu - EvoWars</title>
+  <link rel="stylesheet" href="achievements.css" />
+</head>
+<body>
+
+<div id="achievements">
+
+  <!-- CỘT TRÁI: THÀNH TỰU -->
+  <div class="column">
+    <h2>THÀNH TỰU</h2>
+
+    <div class="achievement">
+      <span>Trận đã chơi</span>
+      <progress value="2" max="10"></progress>
+      <b>2 / 10</b>
+    </div>
+
+    <div class="achievement">
+      <span>Trận đội thắng</span>
+      <progress value="0" max="5"></progress>
+      <b>0 / 5</b>
+    </div>
+
+    <div class="achievement">
+      <span>Quả cầu đã thu thập</span>
+      <progress value="1358" max="10000"></progress>
+      <b>1358</b>
+    </div>
+
+    <div class="achievement">
+      <span>Tử vong</span>
+      <progress value="31" max="100"></progress>
+      <b>31</b>
+    </div>
+  </div>
+
+  <!-- CỘT GIỮA: COMBO HẠ GỤC -->
+  <div class="column">
+    <h2>HẠ GỤC</h2>
+
+    <div class="achievement">
+      <span>Hạ gục</span>
+      <progress value="25" max="200"></progress>
+      <b>25</b>
+    </div>
+
+    <div class="achievement">
+      <span>Double hạ gục</span>
+      <progress value="0" max="5"></progress>
+      <b>0</b>
+    </div>
+
+    <div class="achievement">
+      <span>Triple hạ gục</span>
+      <progress value="0" max="3"></progress>
+      <b>0</b>
+    </div>
+
+    <div class="achievement">
+      <span>Quadra / Penta / Mega</span>
+      <b>0</b>
+    </div>
+  </div>
+
+  <!-- CỘT PHẢI: VÒNG TỐT NHẤT -->
+  <div class="column best-round">
+    <h2>VÒNG TỐT NHẤT</h2>
+    <div class="score">28175</div>
+
+    <div class="stats">
+      <div>🎮 Trận chơi: 1</div>
+      <div>⚔️ Hạ gục: 4</div>
+      <div>💀 Tử vong: 5</div>
+      <div>🔮 Quả cầu: 399</div>
+    </div>
+
+    <button id="claimChest">Nhận rương</button>
+  </div>
+
+</div>
+
+<script src="achievements.js"></script>
+</body>
+</html>
