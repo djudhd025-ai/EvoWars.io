@@ -55,3 +55,76 @@ body {
   font-size: 14px;
   opacity: 0.7;
 }
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(#2b2b2b, #0f0f0f);
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+#menu {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.version {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.player-name {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.play-btn {
+  margin-top: 20px;
+  padding: 16px 60px;
+  font-size: 26px;
+  font-weight: bold;
+  background: #c62828;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background: #e53935;
+}
+
+.boost {
+  margin-top: 30px;
+}
+
+.boost button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #455a64;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boost button:hover {
+  background: #607d8b;
+}
+const playBtn = document.getElementById("playBtn") as HTMLButtonElement;
+const boostBtn = document.getElementById("boostBtn") as HTMLButtonElement;
+
+playBtn.addEventListener("click", () => {
+  console.log("Vào trận đấu");
+  window.location.href = "game.html";
+});
+
+boostBtn.addEventListener("click", () => {
+  alert("Tăng cường đã được kích hoạt!");
+});
