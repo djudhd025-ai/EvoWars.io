@@ -3,150 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <title>EvoWars.io – New Era</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#0f1720;
+        background-image: radial-gradient(#1f2937 1px, transparent 1px);
+        background-size:40px 40px;
+        color:white;
+        text-align:center;
+    }
+
+    .desc{
+        font-size:15px;
+        color:#d1d5db;
+        max-width:500px;
+        margin:20px auto;
+        line-height:1.6;
+    }
+
+    .container{
+        margin-top:120px;
+        background:rgba(0,0,0,0.6);
+        width:420px;
+        padding:40px;
+        border-radius:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .play-btn{
+        background:#ff5a1f;
+        border:none;
+        padding:15px 40px;
+        font-size:22px;
+        color:white;
+        border-radius:10px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .play-btn:hover{
+        background:#ff7a40;
+        transform:scale(1.1);
+    }
+  </style>
 </head>
+
 <body>
-  <div id="loading-screen">
-    <img
-      src="Screenshot_20260124_190655.jpg"
-      class="logo"
-      alt="EvoWars New Era"
-    />
 
-    <h1>Chào mừng đến với EvoWars.io</h1>
-    <h2>Chiến đấu! Tiêu diệt! Tiến hóa!</h2>
+<!-- LOADING -->
+<div id="loading-screen">
+  <img src="Screenshot_20260124_190655.jpg" class="logo" />
 
-    <p id="description" class="hidden">
-      Nhân vật của bạn sẽ tiến hóa mỗi khi lên cấp. Khi tiến hóa,
-      vũ khí và trang phục của bạn sẽ mạnh mẽ hơn.<br /><br />
-      Thu thập các quả cầu năng lượng và tiêu diệt đối thủ để nhận
-      kinh nghiệm và tăng kích thước. Mỗi cấp độ sẽ thay đổi ngoại
-      hình và độ dài thanh kiếm.
-    </p>
+  <h1>Chào mừng đến với EvoWars.io</h1>
+  <h2>Chiến đấu! Tiêu diệt! Tiến hóa!</h2>
 
-    <div class="progress-container">
-      <div id="progress-bar"></div>
-    </div>
-    <span id="progress-text">0%</span>
+  <!-- ✅ ĐOẠN MÔ TẢ THÊM -->
+  <p class="desc">
+    Nhân vật của bạn sẽ tiến hóa mỗi khi lên cấp. Khi tiến hóa,
+    vũ khí và trang phục của bạn sẽ mạnh mẽ hơn.<br><br>
+    Thu thập các quả cầu năng lượng và tiêu diệt đối thủ để nhận
+    kinh nghiệm và tăng kích thước. Mỗi cấp độ sẽ thay đổi ngoại
+    hình và độ dài thanh kiếm.
+  </p>
 
-    <button id="play-btn" class="hidden">PLAY</button>
-
-    <div class="version">NEW ERA – v.18.9</div>
+  <div class="progress-container">
+    <div id="progress-bar"></div>
   </div>
+  <span id="progress-text">0%</span>
 
-  <script src="main.js"></script>
-  
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <div id="menu">
-
-    <!-- Logo -->
-    <img src="assets/logo.png" class="logo" alt="EvoWars New Era" />
-
-    <!-- Phiên bản -->
-    <div class="version">v.19.18</div>
-
-    <!-- Tên người chơi -->
-    <div class="player-name">Warrior#74248</div>
-
-    <!-- Nút CHƠI -->
-    <button id="playBtn" class="play-btn">PLAY</button>
-
-
-    </div>
-
-  </div>
-
-  <script src="main.js"></script>
-
-<style>
-
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#0f1720;
-    background-image: radial-gradient(#1f2937 1px, transparent 1px);
-    background-size:40px 40px;
-    color:white;
-    text-align:center;
-}
-
-/* khung giao diện */
-
-.container{
-    margin-top:120px;
-    background:rgba(0,0,0,0.6);
-    width:420px;
-    padding:40px;
-    border-radius:20px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-/* tiêu đề */
-
-h1{
-    font-size:32px;
-    margin-bottom:10px;
-}
-
-/* mô tả */
-
-.desc{
-    font-size:16px;
-    color:#d1d5db;
-    margin-bottom:30px;
-}
-
-
-.play-btn{
-    background:#ff5a1f;
-    border:none;
-    padding:15px 40px;
-    font-size:22px;
-    color:white;
-    border-radius:10px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.play-btn:hover{
-    background:#ff7a40;
-    transform:scale(1.1);
-}
-
-.footer{
-    margin-top:20px;
-    font-size:12px;
-    color:#9ca3af;
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-
-<div class="desc">
+  <button id="play-btn" style="display:none;">PLAY</button>
 </div>
 
-
-<div class="footer">
+<!-- MENU -->
+<div id="menu" style="display:none;">
+  <img src="assets/logo.png" class="logo" />
+  <div class="version">v.19.18</div>
+  <div class="player-name">Warrior#74248</div>
+  <button id="playBtn" class="play-btn">PLAY</button>
 </div>
 
-</div>
+<script src="main.js"></script>
 
 <script>
+  let progress = 0;
+  const bar = document.getElementById("progress-bar");
+  const text = document.getElementById("progress-text");
+  const playBtn = document.getElementById("play-btn");
 
-function startGame(){
-    alert("Bắt đầu trò chơi!");
-}
+  const interval = setInterval(() => {
+    progress += 10;
+    bar.style.width = progress + "%";
+    text.innerText = progress + "%";
 
+    if(progress >= 100){
+      clearInterval(interval);
+      playBtn.style.display = "inline-block";
+    }
+  }, 300);
+
+  playBtn.onclick = () => {
+    document.getElementById("loading-screen").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+  };
+
+  document.getElementById("playBtn").onclick = () => {
+    alert("Bắt đầu game!");
+  };
 </script>
 
 </body>
-      </html>
+</html>
